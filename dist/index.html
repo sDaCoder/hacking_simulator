@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Favourite Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+        body{
+            font-family: 'Kanit', sans-serif;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        span {
+            padding: 2px;
+            animation: blink 1s ease-in-out infinite alternate;
+        }
+
+        span:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        span:nth-child(3) {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+
+    <ul class="font-extrabold text-2xl text-green-500 space-y-4 m-8">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+<script src="script.js"></script>
+
+</html>
