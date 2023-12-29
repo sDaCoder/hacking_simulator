@@ -22,3 +22,13 @@ async function display() {
 }
 
 display()
+var groups = document.querySelectorAll("li")
+groups.forEach(function(group, i)  {
+   var dots = group.getElementsByTagName("span")
+   var current = 0
+   setInterval(() => {
+       dots[current].style.visibility = 'hidden'
+       current = (current + 1)%(dots.length)
+       dots[current].style.visibility = 'visible'
+   }, 200);
+});
